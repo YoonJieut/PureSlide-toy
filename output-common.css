@@ -22,6 +22,7 @@ li {
   width: 700px;
   height: 400px;
   outline: 5px solid black;
+  overflow: hidden;
 }
 #root #ItemsOutbox #slideUl {
   outline: 1px solid #fff;
