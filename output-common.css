@@ -17,27 +17,31 @@ li {
   justify-content: center;
   align-items: center;
 }
-#root #slideUl {
-  outline: 1px solid black;
+#root #ItemsOutbox {
+  position: relative;
   width: calc(100vw - 500px);
+  height: 400px;
+  outline: 5px solid black;
+}
+#root #ItemsOutbox #slideUl {
+  outline: 1px solid #fff;
   height: 400px;
   display: flex;
-  position: relative;
-}
-#root #slideUl .slideItems {
-  width: calc(100vw - 500px);
-  height: 400px;
   position: absolute;
   top: 0;
   left: 0;
 }
-#root #slideUl .slideItems:first-child {
+#root #ItemsOutbox #slideUl .slideItems {
+  width: calc(100vw - 500px);
+  height: 400px;
+}
+#root #ItemsOutbox #slideUl .slideItems:first-child {
   background-color: aqua;
 }
-#root #slideUl .slideItems:nth-of-type(2) {
+#root #ItemsOutbox #slideUl .slideItems:nth-of-type(2) {
   background-color: #777;
 }
-#root #slideUl .slideItems:last-child {
+#root #ItemsOutbox #slideUl .slideItems:last-child {
   background-color: red;
 }
 

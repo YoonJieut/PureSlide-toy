@@ -21,29 +21,34 @@ li {
 
   @include flex(center, center);
 
-  #slideUl {
-    outline: 1px solid black;
+  #ItemsOutbox{
+    position: relative;
     width: calc(100vw - 500px);
     height: 400px;
-    display: flex;
-    position: relative;
+    outline: 5px solid black;
 
-
-    .slideItems{
-      width: calc(100vw - 500px);
+    #slideUl {
+      outline: 1px solid #fff;
       height: 400px;
+      display: flex;
       position:  absolute;
-      top: 0;
+      top: 0; 
       left: 0;
-    }
-    .slideItems:first-child {
-      background-color: aqua;
-    }
-    .slideItems:nth-of-type(2) {
-      background-color: #777;
-    }
-    .slideItems:last-child {
-      background-color: red;
+  
+      .slideItems{
+        width: calc(100vw - 500px);
+        height: 400px;
+        
+      }
+      .slideItems:first-child {
+        background-color: aqua;
+      }
+      .slideItems:nth-of-type(2) {
+        background-color: #777;
+      }
+      .slideItems:last-child {
+        background-color: red;
+      }
     }
   }
 }
