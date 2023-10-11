@@ -1,0 +1,38 @@
+@mixin flex($justify, $align){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  text-align: center;
+  list-style: none;
+}
+
+#root {
+  width: 100vw;
+  height : 100vh;
+  background-color: #ccc;
+
+  @include flex(center, center);
+
+  #slideUl {
+    width: 50vw;
+    height: 40vh;
+
+    .slideItems:first-child {
+      background-color: aqua;
+    }
+    .slideItems:nth-of-type(2) {
+      background-color: #777;
+    }
+    .slideItems:last-child {
+      background-color: red;
+    }
+  }
+}

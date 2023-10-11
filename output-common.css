@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #slideUl {
+  width: 50vw;
+  height: 40vh;
+}
+#root #slideUl .slideItems:first-child {
+  background-color: aqua;
+}
+#root #slideUl .slideItems:nth-of-type(2) {
+  background-color: #777;
+}
+#root #slideUl .slideItems:last-child {
+  background-color: red;
+}
+
+/*# sourceMappingURL=output-common.css.map */
