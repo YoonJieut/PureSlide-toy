@@ -31,17 +31,17 @@ li {
   top: 0;
   left: 0;
 }
-#root #ItemsOutbox #slideUl .slideItems {
+#root #ItemsOutbox #slideUl li {
   width: 700px;
   height: 400px;
 }
-#root #ItemsOutbox #slideUl .slideItems:first-child {
+#root #ItemsOutbox #slideUl .slideItems1 {
   background-color: aqua;
 }
-#root #ItemsOutbox #slideUl .slideItems:nth-of-type(2) {
+#root #ItemsOutbox #slideUl .slideItems2 {
   background-color: #777;
 }
-#root #ItemsOutbox #slideUl .slideItems:last-child {
+#root #ItemsOutbox #slideUl .slideItems3 {
   background-color: red;
 }
 
