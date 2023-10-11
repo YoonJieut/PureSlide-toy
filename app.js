@@ -19,3 +19,12 @@ function leftMove(){
   }, 1)
 }
 
+function appnedSomething (){
+  console.log('append 실행됨')
+  let remove1st = slideUl.removeChild(slideUl.children[0]);
+  // 삭제한 것을 반환하는 리무브 차일드 메소드 이용
+  slideUl.appendChild(remove1st);
+}
+appnedSomething();
+
+setTimeout
